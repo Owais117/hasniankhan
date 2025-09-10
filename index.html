@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAsnian khan</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            background-image: url(images/WhatsApp\ Image\ 2025-09-11\ at\ 2.34.34\ AM.jpeg);
-            background-size: cover;
-            background-position:0 -500px ;
-            display: flex;
-      justify-content: center;
-      align-items: center;
-      
-        }
+ body {
+  font-family: Arial, sans-serif;
+  background: url('images/WhatsApp\ Image\ 2025-09-11\ at\ 2.34.34\ AM.jpeg') no-repeat center top;
+  background-size: cover; /* fills screen */
+  min-height: 100vh;
+  margin: 0;
+    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: 0px -500px;
+}
         .container {
-            margin-top: 300px;
+            margin-top: 200px;
       width: 90%;
       max-width: 400px;
       padding: 20px;
@@ -70,6 +68,14 @@
           
           
         }
+        @media (max-width: 768px) {
+  body {
+    background-position: center top;  /* push face into view */
+    background-size: contain;         /* show full image */
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+}
     </style>
 </head>
 <body>
