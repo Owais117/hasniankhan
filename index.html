@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAsnian khan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url(images/WhatsApp\ Image\ 2025-09-11\ at\ 2.34.34\ AM.jpeg);
+            background-size: cover;
+            background-position:0 -500px ;
+            display: flex;
+      justify-content: center;
+      align-items: center;
+      
+        }
+        .container {
+            margin-top: 200px;
+      width: 90%;
+      max-width: 400px;
+      padding: 20px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      color: #fff;
+      text-align: center;
+    }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin: 0 auto 20px;
+            background-image: url(images/Hasnian\ profile.jpeg);
+            background-size: cover;
+        }
+        .profile-img::after {
+            content: "";
+            display: block;
+            /* https://linktr.ee/shahidanwarllc.com */
+        }
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 10px 0;
+            padding: 12px 20px;
+            background-color: white;
+            color:black;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-weight: bold;
+            gap: 10px; 
+            border: 1px solid black;
+        }
+        .link-btn:hover {
+            background-color: #0d8ddb;
+        }
+        .link-btn img {
+            width: 24px;
+            height: 24px;
+          
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-img">
+          
+           
+        </div>
+        <h2>Hasnain Khan</h2>
+        <p>Welcome to the university</p>
+
+        <!-- Buttons with icon placeholders -->
+        <a href="#" class="link-btn">
+            <img src="" alt="">
+         courses
+        </a>
+        <a href="#" class="link-btn">
+            <img src="images/instagram.png" alt="">
+            
+          On instagram
+        </a>
+        <a href="#" class="link-btn">
+            <img src="images/youtube.png" alt="">
+            
+            On YouTube
+        </a>
+        <a href="#" class="link-btn">
+            <img src="images/whatsapp.png" alt="">
+            
+            WhatsApp
+        </a>
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll('.link-btn');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('Link clicked!'); // placeholder for real action
+            });
+        });
+    </script>
+</body>
+</html>
